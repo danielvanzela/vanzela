@@ -88,7 +88,7 @@ main {
 section {
     width: 100vw;
     height: 40vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.931), rgba(0, 0, 0, 0.798)), url(/assets/img/capa\ planilhas.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.931), rgba(0, 0, 0, 0.798)), url(../img/capa\ planilhas.jpg);
     color: white;
     background-position: center;
     background-size: cover;
