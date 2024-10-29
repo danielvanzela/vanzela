@@ -14,31 +14,31 @@
     --branco-gelo: #eff1f3;
 
 }
-nav{
-background-color: var(--cinza-escuro);
-position: fixed;
-margin: 0 auto;
-height: 7vh;
-width: 50vw;
-z-index: 999;
-margin: 20px;
-border-radius: 50px;
+
+nav {
+    background-color: var(--cinza-escuro);
+    position: fixed;
+    margin: 0 auto;
+    height: 7vh;
+    width: 50vw;
+    z-index: 999;
+    margin: 20px;
+    border-radius: 50px;
 }
 
 main {
-    width: 100vw;
-    height: 60vh;
+    width: 100%;
+    height: 100vh;
     background-color: #fed766;
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    position: relative;
-    box-shadow: 0px 0px 5px 5px rgb(21, 21, 21);
     z-index: 99;
     color: rgb(19, 19, 19);
+    box-sizing: border-box;
 
     & div {
-        width: 50vw;
+        width: 55vw;
         padding: 20px 80px;
         box-sizing: border-box;
         display: flex;
@@ -52,14 +52,19 @@ main {
     }
 
     & span {
-        width: 500px;
-        border-radius: 50%;
-        top: 80px;
-        position: absolute;
-        right: 10%;
-        height: 500px;
-        background-color: var(--azul-claro);
+        width: 45vw;
+        height: 100vh;
+        position: relative;
     }
+
+    & #post1 {
+        width: 450px;
+        padding: 50PX  0 0 0 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 
     & img {
         top: -100px;
@@ -86,7 +91,7 @@ main {
 }
 
 section {
-    width: 100vw;
+    width: 100%;
     height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.931), rgba(0, 0, 0, 0.798)), url(../img/capa\ planilhas.jpg);
     color: white;
@@ -96,6 +101,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 
     & p {
 
