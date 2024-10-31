@@ -20,10 +20,40 @@ nav {
     position: fixed;
     margin: 0 auto;
     height: 7vh;
-    width: 50vw;
     z-index: 999;
     margin: 20px;
     border-radius: 50px;
+
+    & a {
+        text-decoration: none;
+    }
+
+
+    & ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    & li {
+        
+        height: 100%;
+        padding: 0 15px;
+        border-radius: 50px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+    & li:hover {
+        cursor: pointer;
+        background-color: var(--amarelo);
+        box-shadow: 0px 0px 5px -1px var(--cinza-escuro);
+        color: var(--cinza-escuro);
+    }
 }
 
 #talk_Whats {
@@ -33,7 +63,7 @@ nav {
     z-index: 99999;
 
     & img {
-    width: 100px;
+        width: 100px;
     }
 }
 
@@ -42,13 +72,12 @@ main {
     height: 100vh;
     background-color: #fed766;
     display: flex;
-    flex-wrap: nowrap;
     overflow: hidden;
     z-index: 99;
     color: rgb(19, 19, 19);
     box-sizing: border-box;
 
-    & div {
+    & #desc1 {
         width: 55vw;
         padding: 20px 80px;
         box-sizing: border-box;
@@ -138,4 +167,55 @@ section {
         cursor: pointer;
     }
 
+}
+
+@media (max-width:900px) {
+    main {
+        flex-direction: column;
+
+        & h1 {
+            font-size: 30px;
+        }
+
+        & span {
+            width: 100%;
+            height: 60vh;
+        }
+
+        & #desc1 {
+            width: 100%;
+            height: 40vh;
+            font-size: 8px;
+            padding: 10px;
+        }
+
+        & #post1 {
+            width: 100%;
+            height: 100vh;
+            font-size: 8px;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+    }
+
+    section {
+        background-color: #009fb7;
+        height: 50vh;
+
+        & * {
+            margin: 0;
+            padding: 0;
+        }
+
+        & P {
+            width: 90VW;
+        }
+
+        & h2 {
+            width: 100%;
+            text-align: center;
+            margin: 10px;
+        }
+
+    }
 }
