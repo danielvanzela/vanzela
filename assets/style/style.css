@@ -37,7 +37,7 @@ nav {
     }
 
     & li {
-        
+
         height: 100%;
         padding: 0 15px;
         border-radius: 50px;
@@ -130,7 +130,7 @@ main {
     }
 }
 
-section {
+#planilhaSobMedida {
     width: 100%;
     height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.931), rgba(0, 0, 0, 0.798)), url(../img/capa\ planilhas.jpg);
@@ -169,6 +169,54 @@ section {
 
 }
 
+#social-media {
+    width: 100%;
+    height: 100px;
+    background-color: var(--cinza-escuro);
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    & span {
+        height: 50px;
+        width: 150px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    & span.linkedin {
+        background-color: #0072b1;
+    }
+
+    & span.facebook {
+        background-color: #0081ff;
+    }
+
+    & span.ig {
+        background: linear-gradient(90deg, #8134AF, #dd2a7b, #f58529);
+    }
+
+    & span img {
+        height: 40px;
+    }
+
+    & span p {
+        font-size: large;
+        font-weight: 900;
+        color: white;
+        margin: 5px;
+    }
+
+    & a {
+        text-decoration: none;
+    }
+}
+
 @media (max-width:900px) {
     main {
         flex-direction: column;
@@ -198,7 +246,7 @@ section {
         }
     }
 
-    section {
+    #planilhaSobMedida {
         background-color: #009fb7;
         height: 50vh;
 
