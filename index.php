@@ -213,15 +213,15 @@
     <section id="contato-email">
         <h1>Mande um email</h1>
         <div>
-            <form action="">
+            <form action="enviaremail.php" method="POST">
                 <h1>Contato</h1>
                 <label for="">Nome</label>
-                <input type="text" name="name-email" id="name-email" placeholder="Digite seu Nome...">
+                <input type="text" name="nome" id="name-email" required placeholder="Digite seu Nome...">
                 <label for="">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu E-mail...">
+                <input type="email" name="email" id="email" required placeholder="Digite seu E-mail...">
                 <label for="">Mensagem</label>
-                <textarea type="text" name="mensage-email" id="mensage-email"
-                    placeholder="Digite sua mensagem..."></textarea>
+                <textarea type="text" name="mensagem" id="mensage-email"
+                    required placeholder="Digite sua mensagem..."></textarea>
                 <input type="submit" value="Enviar email">
             </form>
         </div>

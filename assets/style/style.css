@@ -258,7 +258,6 @@ main {
     justify-content: end;
     align-items: center;
     background-color: var(--amarelo);
-    display: none;
 
     & div {
         background-color: var(--azul-claro);
