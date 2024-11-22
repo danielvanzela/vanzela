@@ -254,7 +254,7 @@ main {
     height: 70vh;
     width: 100%;
     color: black;
-    display: flex;
+    display: none;
     justify-content: end;
     align-items: center;
     background-color: var(--amarelo);
